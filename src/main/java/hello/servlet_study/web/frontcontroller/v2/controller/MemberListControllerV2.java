@@ -4,7 +4,6 @@ import hello.servlet_study.domain.member.Member;
 import hello.servlet_study.domain.member.MemberRepository;
 import hello.servlet_study.web.frontcontroller.MyView;
 import hello.servlet_study.web.frontcontroller.v2.ControllerV2;
-import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
