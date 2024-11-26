@@ -7,6 +7,7 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
@@ -19,7 +20,7 @@ public class MemberListServlet extends HttpServlet {
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        List<Member> members = memberRepository.findByAll();
+        List<Member> members = memberRepository.findAll();
 
         resp.setContentType("text/html");
         resp.setCharacterEncoding("utf-8");

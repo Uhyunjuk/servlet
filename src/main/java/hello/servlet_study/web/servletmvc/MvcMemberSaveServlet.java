@@ -2,13 +2,13 @@ package hello.servlet_study.web.servletmvc;
 
 import hello.servlet_study.domain.member.Member;
 import hello.servlet_study.domain.member.MemberRepository;
-import jakarta.servlet.DispatcherType;
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+
 import java.io.IOException;
 
 @WebServlet(name = "mvcMemberSaveServlet", urlPatterns = "/servlet-mvc/members/save")

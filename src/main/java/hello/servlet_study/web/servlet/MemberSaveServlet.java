@@ -7,6 +7,7 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+
 import java.io.IOException;
 import java.io.PrintWriter;
 
@@ -40,8 +41,8 @@ public class MemberSaveServlet extends HttpServlet {
                 "<ul>\n" +
                 "    <li>id="+member.getId()+"</li>\n" +
                 "    <li>username="+member.getUsername()+"</li>\n" +
-                " <li>age="+member.getAge()+"</li>\n" + "</ul>\n" +
-                "<a href=\"/index.html\">메인</a>\n" + "</body>\n" +
-                "</html>");
+" <li>age="+member.getAge()+"</li>\n" + "</ul>\n" +
+        "<a href=\"/index.html\">메인</a>\n" + "</body>\n" +
+        "</html>");
     }
 }

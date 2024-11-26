@@ -30,7 +30,7 @@ public class ResponseHeaderServlet extends HttpServlet {
 
         //[message body]
         PrintWriter writer = response.getWriter();
-        writer.println("ok안녕하세요");
+        writer.println("ok");
     }
 
     //Content 편의 메서드
