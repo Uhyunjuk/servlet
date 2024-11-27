@@ -20,7 +20,7 @@ public class MemberListServlet extends HttpServlet {
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        List<Member> members = memberRepository.findAll();
+        List<Member> members = memberRepository.findByAll();
 
         resp.setContentType("text/html");
         resp.setCharacterEncoding("utf-8");
